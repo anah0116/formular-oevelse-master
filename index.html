@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formular oevelse</title>
+  <link rel="stylesheet" href="css/demo.css" />
+  <!-- Ret i nedenståendde stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <header class="banner">
+    <div class="logo">
+      <a href="#0">Logo</a>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <header>
+        <h2>Kontakt os</h2>
+        <p>
+          Udfyld kontaktformularen for at kontakte os. Vi glæder os til at
+          høre fra dig.
+        </p>
+      </header>
+
+      <form action="tak.html" name="kontakt" netify>
+        <!-- Formular-indhold -->
+        <!-- Id med For gør at label hægtes på input, så man kan klikke på label og komme til input -->
+        <div class="form-felt">
+          <label for="fornavn">Fornavn</label>
+          <input placeholder="fx. Entotre" id="fornavn" type="text" name="fornavn" required />
+        </div>
+        <div class="form-felt">
+          <label for="efternavn">Efternavn</label>
+          <input placeholder="fx. Firefemseks" id="efternavn" type="text" name="efternavn" />
+        </div>
+        <div class="form-felt">
+          <label for="email">E-mail</label>
+          <input placeholder="fx. syvotte@mail.dk" id="email" type="text" name="email" />
+        </div>
+        <div class="form-felt">
+          <label>
+            Vælg
+            <select name="rolle">
+              <option value="">Vælg rolle</option>
+              <option value="studerende">Studerende</option>
+              <option value="underviser">Underviser</option>
+            </select>
+          </label>
+        </div>
+        <div class="form-felt">
+          <label for="besked">Besked</label>
+          <textarea name="besked" id="besked" cols="30" rows="5"></textarea>
+        </div>
+        <Button>Indsend</Button>
+
+
+      </form>
+    </section>
+  </main>
+</body>
+
+</html>
